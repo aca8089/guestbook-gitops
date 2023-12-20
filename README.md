@@ -339,3 +339,4 @@ To delete the cluster, run:
 These two posts explain GitOps concepts and its origins. We then demonstrated how to pull together a GitOps pipeline for application deployments. This is one example of how to leverage GitOps.  To see even more use cases and examples of how you can leverage GitOps, see the [Flux version 2 docs](https://toolkit.fluxcd.io/get-started/#staging-workflow).
 
 
+
