@@ -31,7 +31,10 @@ jobs:
 
     - name: Checkout
       uses: actions/checkout@master  
-   
+
+    - name: Amazon ECR "Login" Action for GitHub Actions
+      uses: aws-actions/amazon-ecr-login@v2
+          
     - name: Build and tag the image
       run: |
         # Build and tag the image
