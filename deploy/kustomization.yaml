@@ -10,4 +10,4 @@ resources:
 
 images:
 - name: 725288432775.dkr.ecr.us-east-1.amazonaws.com/guestbook
-  newTag: 13268e95811c6f48e16b73815289eb2aa00122b5
+  newTag: 71a60b78974259aac3b028a3015baa360eff8a2d
