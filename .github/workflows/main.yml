@@ -32,11 +32,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master  
 
-    - name: Amazon ECR Login Action for GitHub Actions
-      uses: aws-actions/amazon-ecr-login@v2
-      with:
-        aws-region: $AWS_DEFAULT_REGION
-       
+    - name: Login to Amazon ECR
+      run: |
+        aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+
     - name: Build and tag the image
       run: |
         # Build and tag the image
