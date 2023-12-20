@@ -32,9 +32,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master  
 
-    - name: Amazon ECR "Login" Action for GitHub Actions
+    - name: Amazon ECR Login Action for GitHub Actions
       uses: aws-actions/amazon-ecr-login@v2
-          
+      with:
+        aws-region: $AWS_DEFAULT_REGION
+       
     - name: Build and tag the image
       run: |
         # Build and tag the image
